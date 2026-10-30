@@ -1,6 +1,6 @@
 # Presidency University Campus Guide
 
-A local Streamlit campus information app using the two supplied route knowledge files, persistent ChromaDB retrieval, Sentence Transformers embeddings, optional Groq answers, and editable image metadata. The files are preserved unmodified under `knowledge_base/`.
+A local Streamlit campus guide with campus navigation, Library and Transport assistants, persistent ChromaDB retrieval, Sentence Transformers embeddings, Groq-generated answers, and editable image metadata. Source text lives in `knowledge_base/`; additional documents can be uploaded from the app.
 
 ## Setup and launch
 
@@ -16,6 +16,8 @@ streamlit run app.py
 ```
 
 The first index may download `sentence-transformers/all-MiniLM-L6-v2` and may take a few minutes. Use **Index / refresh campus files** in the sidebar after changing knowledge files. ChromaDB persists under `data/chroma_db/`.
+
+You can add knowledge documents directly in the sidebar without editing code. Upload TXT, Markdown, CSV, JSON, PDF, DOCX, or XLSX files (up to 10 MB each), choose **General**, **Library**, or **Transport**, then click **Upload and index**. The app extracts text, saves a searchable text copy in `data/uploads/`, chunks it with the configured chunk size and overlap, and rebuilds the shared ChromaDB index. General uploads are available to the campus assistant; Library and Transport uploads are additionally included by their matching assistants. PDFs need selectable text; scanned image-only PDFs are not OCR-processed. Uploaded documents are local runtime data and are excluded from Git; retain `data/uploads/` on persistent storage if your hosting provider uses an ephemeral filesystem. To remove an uploaded source, delete its generated text file from `data/uploads/` and click **Index / refresh campus files**.
 
 ## Configuration
 
@@ -33,11 +35,15 @@ The example is a schema illustration, not actual campus image information. User-
 
 ## Routes and limitations
 
-The supplied text files are the route sources. Add future route text files as `.txt` files in `knowledge_base/` and use **Index / refresh campus files** to include them. Their contents can overlap or differ in certainty. Campus Navigation searches for a single document that explicitly includes both the requested origin and destination. It does not combine route records, infer pathways, calculate distances, or run shortest-path routing. Route text marked “Verify” remains caveated and should be confirmed on campus. No distance values, evaluation scores, or route graph are bundled.
+The supplied text files are the route sources. Add future route text files as `.txt` files in `knowledge_base/` or upload supported document formats in the sidebar. Use **Index / refresh campus files** after filesystem changes. Their contents can overlap or differ in certainty. Campus Navigation searches for a single document that explicitly includes both the requested origin and destination. It does not combine route records, infer pathways, calculate distances, or run shortest-path routing. Route text marked “Verify” remains caveated and should be confirmed on campus. No distance values, evaluation scores, or route graph are bundled.
 
 ## Using the modules
 
 Campus Explorer uses Groq to summarize retrieved location and facility information in natural language; the original matching passages remain available under **Retrieved campus sources**. Campus Navigation asks Groq to explain a route only after finding a source record that explicitly mentions both endpoints, and shows the matching route records for verification. The About page also lets you ask Groq questions about the guide itself. These answers require a working Groq API key and stay grounded in the context shown to the model.
+
+The **University Transport** sidebar module answers questions about portal bus routes, boarding points, pickup times, annual fees, registration, route changes, and the 2026–27 academic calendar using `knowledge_base/transport_information.txt`. It filters retrieval to transport documents and uses Groq for source-grounded answers. Conversation history is kept for the current Streamlit session, so follow-up questions can use earlier turns; use **Clear conversation** to reset it. The transport data is a dated snapshot (portal data copied 29 October 2026), not live information; confirm details with the university before relying on or publishing them. Seat counts may change, drop-off times are not available, and holiday bus operations are unconfirmed. Driver names and personal numbers, as well as direct personal contact details, are excluded from the integrated data.
+
+The **Library Assistant** answers from the Git-sourced library route and facility records, including the Law Library and Technical Library in M Block, and does not display images. Library-tagged uploads are also included in its retrieval. The available campus files do not establish library hours, borrowing policies, or membership rules; the assistant will not invent them. Use the sidebar upload form to add updated library information.
 
 ## Modules and architecture
 

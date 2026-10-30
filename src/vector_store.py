@@ -32,8 +32,16 @@ def index(force=False):
         col.add(ids=[x["id"] for x in part], documents=[x["text"] for x in part], embeddings=embed_texts([x["text"] for x in part]), metadatas=[{"source":x["source"], "chunk":x["chunk"]} for x in part])
     return {"ok": True, "message": "Index created.", "count": col.count(), "fingerprint": fp}
 
-def search(query, top_k=TOP_K):
+def search(query, top_k=TOP_K, source: str | list[str] | None = None):
     col = collection()
     if not col.count(): return []
-    result = col.query(query_embeddings=embed_texts([query]), n_results=min(top_k, col.count()), include=["documents", "metadatas", "distances"])
+    if source == []:
+        return []
+    if isinstance(source, str):
+        filters = {"where": {"source": source}}
+    elif source:
+        filters = {"where": {"source": {"$in": source}}}
+    else:
+        filters = {}
+    result = col.query(query_embeddings=embed_texts([query]), n_results=min(top_k, col.count()), include=["documents", "metadatas", "distances"], **filters)
     return [{"text":d,"source":m.get("source","unknown"),"chunk":m.get("chunk"),"distance":dist} for d,m,dist in zip(result["documents"][0],result["metadatas"][0],result["distances"][0])]

@@ -1,15 +1,16 @@
 import streamlit as st
-from config import IMAGE_DIR, KNOWLEDGE_DIR, GROQ_API_KEY
+from config import IMAGE_DIR, GROQ_API_KEY
+from src.knowledge_ingestion import sources
 from src.vector_store import collection
 from modules.module_registry import MODULES
 
 def render():
     st.title("🏛️ Presidency University Campus Guide")
-    st.write("Find campus information using the supplied route documents. Answers and navigation remain grounded in those sources.")
+    st.write("Explore campus locations, routes, library information, and transport details grounded in your source documents.")
     try: indexed=collection().count()>0
     except Exception: indexed=False
     images=sum(1 for p in IMAGE_DIR.iterdir() if p.suffix.lower() in {".jpg",".jpeg",".png",".webp"}) if IMAGE_DIR.exists() else 0
-    kb=any(p.suffix.lower()==".txt" and p.read_text(encoding="utf-8-sig").strip() for p in KNOWLEDGE_DIR.glob("*.txt"))
+    kb=any(p.read_text(encoding="utf-8-sig").strip() for p in sources())
     a,b,c=st.columns(3)
     a.metric("Knowledge base", "Indexed" if indexed else ("Ready to index" if kb else "Missing"))
     b.metric("Image library", f"{images} image(s) found")

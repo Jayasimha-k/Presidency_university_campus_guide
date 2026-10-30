@@ -1,0 +1,200 @@
+PRESIDENCY UNIVERSITY CAMPUS GUIDE
+TECHNICAL STACK AND HOSTING NOTES
+============================================================
+
+PROJECT OVERVIEW
+----------------
+An interactive campus guide with campus navigation, Library and Transport
+assistants. It retrieves relevant text from bundled and user-uploaded
+documents, then uses Groq for source-grounded natural-language answers.
+
+
+TECHNOLOGY STACK
+----------------
+Web application framework: Streamlit
+Programming language: Python
+Large language model provider: Groq API
+Configured chat model: openai/gpt-oss-120b
+Text embedding model: sentence-transformers/all-MiniLM-L6-v2
+Vector database: ChromaDB, using its persistent local storage
+Vector similarity metric: cosine
+Image handling: local JPG/JPEG/PNG/WEBP files and filename/metadata matching
+Configuration: environment variables loaded from .env by python-dotenv
+HTTP requests: requests
+
+The application does not require a separate hosted vector database
+service. ChromaDB is embedded in the application and stores its index
+under data/chroma_db/.
+
+
+ENVIRONMENT VARIABLES
+---------------------
+Copy these settings into a local .env file or your hosting provider's
+environment-variable/secrets settings:
+
+GROQ_API_KEY=
+GROQ_MODEL=openai/gpt-oss-120b
+EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+CHROMA_COLLECTION=presidency_campus_guide
+CHUNK_WORDS=200
+CHUNK_OVERLAP=20
+RETRIEVAL_TOP_K=4
+
+GROQ_API_KEY is a secret. Set its real value in the hosting provider's
+secret manager or environment settings. Do not commit the real key to
+GitHub, put it in this file, or expose it in screenshots or logs.
+
+The other values are application settings and can be changed when
+needed. GROQ_MODEL must be a model available to the Groq account.
+
+
+RETRIEVAL SETTINGS
+------------------
+Source files: .txt files in knowledge_base/
+Chunk size: 200 words by default
+Chunk overlap: 20 words by default
+Retrieved context: up to 4 chunks by default
+Vector collection name: presidency_campus_guide by default
+Vector storage directory: data/chroma_db/
+Index refresh: use "Index / refresh campus files" in the app
+
+Sentence Transformers creates embeddings for source text and user
+questions. ChromaDB retrieves the nearest source chunks. Groq receives
+the question and retrieved context to generate the answer.
+
+
+APPLICATION FEATURES
+--------------------
+AI Campus Assistant:
+  Answers campus questions using retrieved source text.
+  Does not display photos.
+
+Campus Explorer:
+  Generates a natural-language answer and displays at most one
+  best-matching photo.
+
+Campus Navigation:
+  Looks for route records that explicitly match the requested start
+  and destination, generates directions from those records, and
+  displays matching route photos in route order with the destination
+  photo last. It does not invent missing turns or combine separate
+  route records.
+
+About the System:
+  Answers questions about the guide using its system description.
+
+University Transport:
+  Answers route, boarding point, pickup time, annual fee, registration,
+  route-change, and academic-calendar questions from a separate transport
+  source filter in the shared ChromaDB collection.
+  Uses Groq for natural-language responses. The underlying data is a dated
+  snapshot, not live service information; verify it with the university.
+  Driver names, driver phone numbers, and direct personal contact details
+  are excluded from the integrated transport source.
+
+Library Assistant:
+  Answers from source-listed Law Library and Technical Library locations,
+  facilities, and directions, plus uploaded library documents.
+  Does not display images.
+  It does not invent library hours or policies absent from the sources.
+
+Knowledge uploads:
+  Streamlit sidebar accepts TXT, Markdown, CSV, JSON, PDF, DOCX, and XLSX.
+  The uploader categorizes each batch as General, Library, or Transport.
+  Uploaded documents are converted to text in data/uploads/, then included
+  in the same chunking, embedding, and persistent ChromaDB indexing flow.
+  Uploads are limited to 10 MB per file and excluded from Git.
+  Keep data/uploads/ on persistent storage when hosting the app.
+
+
+FILES TO INCLUDE WHEN HOSTING
+-----------------------------
+Include the application code and its dependencies:
+  app.py
+  config.py
+  requirements.txt
+  assets/
+  modules/
+  src/
+
+Include campus content and images used by the app:
+  knowledge_base/
+  picture/
+  data/image_metadata.json
+  data/evaluation_questions.json (optional evaluation template)
+  data/uploads/ (runtime user uploads; preserve on persistent storage if needed)
+
+Do not upload:
+  .env with a real API key
+  .venv/
+  __pycache__/
+
+The .env.example file is a safe template; it contains no API key.
+
+
+HOSTING SETUP
+-------------
+1. Connect the GitHub repository:
+   https://github.com/Jayasimha-k/Presidency_university_campus_guide
+
+2. Select a supported Python runtime (Python 3.10 or newer).
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+4. Add the environment variables listed above in the hosting provider's
+   environment/secrets settings. Set GROQ_API_KEY to a valid Groq API key.
+
+5. Set the application start command to:
+   streamlit run app.py --server.address 0.0.0.0 --server.port $PORT
+
+   If the hosting platform uses a different port-variable name or
+   start-command format, use the platform's required equivalent.
+
+6. Make sure the deployment includes knowledge_base/ and picture/.
+   The app needs the source text files to answer campus questions and
+   the images to display photos.
+
+7. Give data/chroma_db/ and data/uploads/ persistent disk storage if the
+   platform supports it. If the host's filesystem is temporary, uploaded
+   files and the index may be lost after a restart or redeployment. Use
+   the app's index-refresh button after deployment if the collection is
+   empty or out of date.
+
+8. Confirm the deployment can make outbound HTTPS requests to the Groq
+   API and can download the embedding model the first time it runs.
+
+
+PYTHON DEPENDENCIES
+-------------------
+Dependencies are declared in requirements.txt:
+  streamlit >= 1.40
+  sentence-transformers >= 3.0
+  chromadb >= 0.5
+  python-dotenv >= 1.0
+  Pillow >= 10.0
+  requests >= 2.32
+  pypdf >= 5.0
+  python-docx >= 1.1
+  openpyxl >= 3.1
+
+
+LOCAL WINDOWS STARTUP
+---------------------
+Double-click start.bat.
+
+The launcher creates a local virtual environment if needed, installs
+the requirements, and starts the Streamlit app. A Python installation
+and an internet connection are required for initial setup and for
+downloading the embedding model if it is not already cached.
+
+
+IMPORTANT LIMITATIONS
+---------------------
+Answers about campus locations and directions depend on the supplied
+text files. Check route source caveats marked "Verify" on campus.
+The app does not calculate distances, use a verified campus graph, or
+find routes by joining separate route records.
+
+END
+============================================================

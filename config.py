@@ -9,6 +9,7 @@ KNOWLEDGE_DIR = ROOT / "knowledge_base"
 IMAGE_DIR = ROOT / "picture"
 DATA_DIR = ROOT / "data"
 CHROMA_DIR = DATA_DIR / "chroma_db"
+UPLOAD_DIR = DATA_DIR / "uploads"
 METADATA_FILE = DATA_DIR / "image_metadata.json"
 EVALUATION_FILE = DATA_DIR / "evaluation_questions.json"
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
