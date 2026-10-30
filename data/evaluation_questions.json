@@ -1,0 +1,21 @@
+{
+  "description": "Evaluation template only. Populate reference evidence and judgments from reviewed campus sources; no scores or results are prefilled.",
+  "automatic_metrics": ["Precision@K", "Recall@K", "response latency"],
+  "human_review_metrics": ["answer correctness", "faithfulness", "answer relevance", "image relevance"],
+  "route_success_rate": "Only applicable after verified route data and route test cases exist.",
+  "cases": [
+    {"id":"direct-answer","question":"","relevant_source_chunks":[],"reference_answer":"","review_status":"not reviewed"},
+    {"id":"semantic-paraphrase","question":"","relevant_source_chunks":[],"reference_answer":"","review_status":"not reviewed"},
+    {"id":"not-in-sources","question":"","expected_behavior":"state that the source does not provide the answer","review_status":"not reviewed"},
+    {"id":"ambiguous-location","question":"","expected_behavior":"ask for clarification","review_status":"not reviewed"},
+    {"id":"image-match","question":"","expected_image_filenames":[],"review_status":"not reviewed"},
+    {"id":"no-image","question":"","expected_image_filenames":[],"review_status":"not reviewed"},
+    {"id":"unknown-destination","question":"","expected_behavior":"do not invent a destination","review_status":"not reviewed"},
+    {"id":"route-request","question":"","expected_behavior":"return only explicit source route and preserve verification caveats","review_status":"not reviewed"},
+    {"id":"missing-knowledge-base","scenario":"temporarily remove source files","expected_behavior":"show missing source state","review_status":"not reviewed"},
+    {"id":"empty-index","scenario":"empty Chroma collection","expected_behavior":"show not indexed state","review_status":"not reviewed"},
+    {"id":"missing-api-key","scenario":"XAI_API_KEY unset","expected_behavior":"keep search available and explain setup","review_status":"not reviewed"},
+    {"id":"api-failure","scenario":"xAI request failure","expected_behavior":"show safe error without credential details","review_status":"not reviewed"},
+    {"id":"repeat-indexing","scenario":"index unchanged sources repeatedly","expected_behavior":"no duplicate chunks","review_status":"not reviewed"}
+  ]
+}

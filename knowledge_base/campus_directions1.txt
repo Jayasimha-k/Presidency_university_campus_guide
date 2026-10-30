@@ -1,0 +1,830 @@
+PRESIDENCY UNIVERSITY CAMPUS GUIDE
+FIXED ROUTE KNOWLEDGE BASE
+==========================
+
+FORMAT:
+ROUTE ID
+START LOCATION -> INTERMEDIATE LOCATION(S) -> DESTINATION
+DIRECTIONS / LANDMARKS
+DESTINATION DETAILS
+
+IMPORTANT:
+
+* Each route below is a predefined route record.
+* Routes can be used as individual retrieval documents in a RAG system.
+* A route can be combined with another route only when the connecting locations and directions are verified.
+* "VERIFY CONNECTION" means the available information does not establish the complete physical route with sufficient certainty.
+* Main Gate is the default starting point when the user does not specify a starting location.
+
+===============================================
+SECTION 1: MAIN GATE AND ENTRANCE
+=================================
+
+ROUTE 001: Main Gate -> Student ID Checkpoint
+Main Gate -> Right-side student ID checkpoint.
+Direction: Enter through the main gate and proceed to the student ID checkpoint on the right.
+Destination: Student entry verification.
+
+ROUTE 002: Main Gate -> Internal Bike Parking
+Main Gate -> Internal bike parking.
+Direction: Enter the main gate and follow the internal entrance route. The internal parking area is on the right along the footpath.
+Destination: Internal bike parking.
+
+ROUTE 003: Main Gate -> Visitor Parking
+Main Gate -> Visitor parking.
+Direction: Locate the visitor parking area on the left after entering the main gate.
+Destination: Visitor parking.
+
+ROUTE 004: Main Gate -> Visitor Entry
+Main Gate -> Visitor entry on the left.
+Direction: Locate either of the visitor entries on the left. Visitors must submit an original proof document for verification, receive a visitor ID card, and return it after the visit.
+Destination: Visitor entry and verification.
+
+ROUTE 005: Main Gate -> Shuttle Bus Parking
+Main Gate -> Road on the left -> Shuttle bus parking.
+Direction: Follow the road to the left of the main gate. Shuttle bus parking is on the right along this road.
+Destination: Shuttle bus parking.
+Service: Shuttle buses operate between Presidency University and Rajanukunte.
+
+ROUTE 006: Main Gate -> Bakery
+Main Gate -> Road on the left -> Bakery.
+Direction: Follow the road to the left of the main gate.
+Destination: Bakery.
+Exact entrance-side connection: Verify.
+
+ROUTE 007: Main Gate -> Right-side Campus Route
+Main Gate -> Student ID checkpoint -> Right-side footpath -> Football ground area -> Cricket nets area.
+Direction: Enter the main gate, pass the student ID checkpoint, and continue along the right-side footpath. The university bus pickup/drop-off area is on the left at relevant times. Continue toward the earlier football ground and cricket nets.
+Destination: Right-side campus route.
+Note: Some sections include muddy or uneven pathways.
+
+ROUTE 008: Internal Bike Parking -> Right-side Campus Route
+Internal bike parking -> Connecting entrance -> Off-road pathway -> Earlier football ground area -> Merging footpath.
+Direction: From internal bike parking, locate the connecting entrance to the off-road pathway. Continue past the earlier football ground on the right until the paths merge.
+Destination: Right-side campus route.
+Note: Confirm the exact junction before combining this route with other paths.
+
+===============================================
+SECTION 2: FOUNTAIN AND LEFT-SIDE CAMPUS
+========================================
+
+ROUTE 009: Main Gate -> Fountain
+Main Gate -> Left-side footpath -> Lawn -> Fountain.
+Direction: Enter the campus and follow the left-side footpath. The lawn is on the left and the fountain is farther ahead on the right.
+Destination: Fountain and nearby seating area.
+
+ROUTE 010: Main Gate -> College Mess
+Main Gate -> Left-side footpath -> Lawn pathway -> College Mess.
+Direction: Follow the left-side campus route and locate the path through the lawn that connects to the college mess.
+Destination: College Mess.
+Exact turns from the gate: Verify.
+
+ROUTE 011: Fountain -> Management Blocks
+Fountain -> Left turn -> Management Blocks.
+Direction: From the fountain, turn left and follow the connecting path. The Management Blocks are on the right.
+Destination: Management Blocks.
+
+ROUTE 012: Fountain -> Controller of Examinations
+Fountain -> Straight pathway -> Controller of Examinations.
+Direction: From the fountain, continue straight along the described pathway.
+Destination: Controller of Examinations.
+Exact approach and entrance: Verify.
+
+ROUTE 013: Fountain -> M Block
+Fountain -> Left-side connecting path -> M Block.
+Direction: From the fountain, take the left-side connecting path toward M Block.
+Destination: M Block.
+Exact junction and turn sequence: Verify.
+
+ROUTE 014: Management Blocks -> Medical Room
+Management Blocks -> Interior pathway -> Turn left -> Medical Room.
+Direction: Enter the Management Block area and take the left turn toward the Medical Room.
+Destination: Medical Room.
+
+ROUTE 015: Management Blocks -> Transport Office
+Management Blocks -> Interior pathway -> Turn left -> Transport Office.
+Direction: Enter the Management Block area and take the left turn toward the Transport Office.
+Destination: Transport Office.
+Note: The Medical Room and Transport Office are in the same general area.
+
+ROUTE 016: Management Blocks -> Music Room
+Management Blocks -> Walk forward -> Glass room on the left.
+Direction: Walk forward through the described Management Block area. Look for the music room in the glass room on the left.
+Destination: Music Room.
+
+ROUTE 017: Management Blocks -> Lift and Washrooms
+Management Blocks -> Straight pathway -> Lift and washrooms.
+Direction: Continue straight through the Management Block area to the lift and washroom area.
+Destination: Lift and washrooms.
+
+ROUTE 018: Management Blocks -> Classrooms
+Management Blocks -> Interior pathway -> Turn left -> Classrooms.
+Direction: From the lift and washroom area, follow the described left-side route toward the classrooms.
+Exact junction: Verify.
+
+ROUTE 019: Management Blocks -> Main Cafeteria
+Management Blocks -> Connecting pathway -> Main Cafeteria.
+Direction: Follow the connecting route from the Management Block area toward the main cafeteria.
+Destination: Main cafeteria, with two floors of seating and outdoor seating.
+Exact turns: Verify.
+
+ROUTE 020: Main Cafeteria -> Auditorium
+Main Cafeteria -> Auditorium above the cafeteria.
+Direction: The auditorium is located above the cafeteria.
+Exact internal staircase or lift route: Verify.
+
+ROUTE 021: Management Blocks -> Auditorium Entrance
+Management Blocks -> Forward pathway -> Auditorium entrance.
+Direction: Continue along the described forward route to reach an auditorium entrance.
+Note: There may be more than one auditorium entrance. Confirm the intended entrance.
+
+ROUTE 022: M Block -> Medical Room
+M Block -> Left pathway -> Medical Room.
+Direction: From M Block, turn left toward the Medical Room.
+Destination: Medical Room.
+
+ROUTE 023: M Block -> Transport Office
+M Block -> Left pathway -> Transport Office.
+Direction: From M Block, turn left toward the Transport Office.
+Destination: Transport Office.
+
+ROUTE 024: M Block -> Controller of Examinations
+M Block -> Straight pathway -> Controller of Examinations on the left.
+Direction: Walk straight from M Block. Look for the Controller of Examinations on the left.
+Destination: Controller of Examinations.
+
+ROUTE 025: M Block -> Office of International Affairs
+M Block -> Right-side connecting path -> Office of International Affairs.
+Direction: From M Block, take the right-side pathway connecting toward the Office of International Affairs.
+Destination: Office of International Affairs.
+Exact entrance and turns: Verify.
+
+ROUTE 026: Auditorium -> Office of International Affairs
+Auditorium -> Return toward Management Blocks -> Lift and washroom area -> Right-side pathway -> Office of International Affairs.
+Direction: Return toward the Management Block area, locate the lift and washrooms, and take the described right-side pathway.
+Destination: Office of International Affairs.
+Exact initial turn from the auditorium: Verify.
+
+===============================================
+SECTION 3: LIBRARIES
+====================
+
+ROUTE 027: M Block -> Law Library
+M Block -> First floor -> Law Library.
+Direction: Reach the first floor of M Block.
+Destination: Law Library.
+Facilities: Law books and novels.
+
+ROUTE 028: M Block -> Technical Library
+M Block -> First floor -> Technical Library.
+Direction: Reach the first floor of M Block.
+Destination: Technical Library.
+Facilities: Technical books, computers, monitors, and workspace.
+
+ROUTE 029: Main Gate -> Law Library
+Main Gate -> M Block -> First floor -> Law Library.
+Direction: Reach M Block using a verified campus route, then proceed to the first floor.
+Destination: Law Library.
+Main Gate-to-M Block route: Use the verified left-side route; exact complete turns need confirmation.
+
+ROUTE 030: Main Gate -> Technical Library
+Main Gate -> M Block -> First floor -> Technical Library.
+Direction: Reach M Block using a verified campus route, then proceed to the first floor.
+Destination: Technical Library.
+Main Gate-to-M Block route: Use the verified left-side route; exact complete turns need confirmation.
+
+===============================================
+SECTION 4: RIGHT-SIDE CAMPUS JUNCTIONS
+======================================
+
+ROUTE 031: Main Gate -> Cricket Nets
+Main Gate -> Student ID checkpoint -> Right-side footpath -> Football ground area -> Merging pathway -> Cricket nets.
+Direction: Follow the right-side campus route past the earlier football ground and continue toward the cricket nets.
+Destination: Cricket nets.
+Exact turns at the merging pathway: Verify.
+
+ROUTE 032: Cricket Nets -> Fountain and Seating Area
+Cricket nets -> Nearby fountain and seating area.
+Direction: Look for the fountain and seating area near the cricket nets.
+Destination: Fountain and seating area.
+
+ROUTE 033: Cricket Nets -> Sports Courts
+Cricket nets -> Basketball court -> Throwball court -> Volleyball court.
+Direction: Three courts are located adjacent to one another near the cricket nets.
+Destination: Basketball, throwball, and volleyball courts.
+Exact order and approach: Confirm on the physical map.
+
+ROUTE 034: Volleyball Court -> New Football Ground
+Volleyball court -> Cross the volleyball court area -> New football ground.
+Direction: Cross the volleyball court area to reach the new football ground.
+Destination: New football ground.
+
+ROUTE 035: Volleyball Court -> New Basketball Court
+Volleyball court -> Cross volleyball court area -> New basketball court.
+Direction: Cross the volleyball court area. The new basketball court is beside the new football ground.
+Destination: New basketball court.
+
+ROUTE 036: Main Gate -> New Basketball Court
+Main Gate -> Right-side campus route -> Cricket nets -> Sports courts -> Volleyball court area -> New basketball court.
+Direction: Follow the right-side route toward the cricket nets and adjacent courts. Cross the volleyball court area to reach the new basketball court.
+Note: Confirm the exact route from the main gate to the cricket nets.
+
+ROUTE 037: College Mess -> New Basketball Court
+College Mess -> Campus path toward cricket nets -> Sports courts -> Volleyball court area -> New basketball court.
+Direction: From the mess, follow the campus path toward the cricket nets. Locate the adjacent courts and cross the volleyball court area.
+Destination: New basketball court.
+Exact mess-to-cricket-nets route: Verify.
+
+===============================================
+SECTION 5: D BLOCK AND NEARBY FACILITIES
+========================================
+
+ROUTE 038: Main Gate -> D Block Area
+Main Gate -> Right-side campus route -> Four-way junction area -> D Block area.
+Direction: Enter through the main gate, follow the right-side route, and continue toward the junction area near the proctor checkpoint.
+Destination: D Block area.
+Exact connection between the junction and D Block: Verify.
+
+ROUTE 039: D Block -> Stationery Shop
+D Block -> Ground floor -> Stationery shop.
+Direction: Reach the ground floor of D Block.
+Destination: D Block stationery shop.
+
+ROUTE 040: Main Gate -> D Block Stationery Shop
+Main Gate -> D Block area -> Ground floor -> Stationery shop.
+Direction: Reach D Block using the verified right-side campus route, then locate the stationery shop on the ground floor.
+Exact Main Gate-to-D Block turns: Verify.
+
+ROUTE 041: D Block Stationery Shop -> Nearby Branching Path
+D Block stationery shop -> Nearby path junction -> Right-side route toward labs and D Block entrance.
+Direction: From the stationery shop, locate the nearby path junction. The right-side route connects toward labs and the D Block entrance.
+Destination: D Block labs and entrance.
+Left-side connection: Leads toward a seating area and another block or route. Exact destination needs verification.
+
+ROUTE 042: D Block -> NVIDIA Board
+D Block -> Ground floor -> NVIDIA board.
+Direction: Locate the NVIDIA board on the ground floor.
+Destination: NVIDIA-powered lab area.
+
+ROUTE 043: D Block -> NVIDIA Labs
+D Block -> Ground floor -> NVIDIA board -> DGL01 / DGL02 / DGL03 and related labs.
+Direction: Locate the NVIDIA board and follow the relevant laboratory signage.
+Destination: NVIDIA-powered labs.
+Note: Confirm the exact room numbers and lab entrances.
+
+ROUTE 044: D Block -> Girls' Washroom
+D Block -> Ground floor -> NVIDIA board -> Right side.
+Direction: On the ground floor, locate the NVIDIA board. The girls' washroom is to its right.
+Destination: Girls' washroom.
+
+ROUTE 045: D Block -> Registrar's Office
+D Block area -> Registrar's Office.
+Direction: The Registrar's Office is near D Block on the first floor.
+Exact entrance and route from D Block: Verify.
+Note: Do not assume the office is inside D Block.
+
+ROUTE 046: D Block -> E Block
+D Block stationery shop -> Seating area route -> E Block.
+Direction: From the D Block stationery shop, take the described left-side route toward the seating area and continue to E Block.
+Destination: E Block.
+Exact turns after the seating area: Verify.
+
+ROUTE 047: D Block -> Udaya Upahar
+D Block area -> Four-way junction near proctor checkpoint -> Continue straight -> Udaya Upahar.
+Direction: Reach the four-way junction near the proctor checkpoint and continue straight.
+Destination: Udaya Upahar.
+Exact starting connection from D Block: Verify.
+
+ROUTE 048: Main Gate -> Udaya Upahar
+Main Gate -> Right-side campus route -> Four-way junction near proctor checkpoint -> Continue straight -> Udaya Upahar.
+Direction: Follow the right-side campus route toward the four-way junction. At the junction, continue straight.
+Destination: Udaya Upahar.
+Confirm the exact route from the main gate to the junction.
+
+ROUTE 049: Four-way Junction -> Hatti Coffee
+Four-way junction near proctor checkpoint -> Hatti Coffee.
+Direction: At the junction, look on the right for Hatti Coffee.
+Destination: Hatti Coffee.
+
+ROUTE 050: Four-way Junction -> Food Vending Machine
+Four-way junction near proctor checkpoint -> Food vending machine.
+Direction: Locate the food vending machine on the right side of the junction.
+Destination: Food vending machine.
+
+ROUTE 051: Four-way Junction -> Registrar's Office
+Four-way junction near proctor checkpoint -> Registrar's Office near D Block -> First floor.
+Direction: The Registrar's Office is near D Block on the first floor.
+Exact route from the junction: Verify.
+
+ROUTE 052: D Block -> Cafe Taj Delight
+D Block area -> Connecting pathway -> Cafe Taj Delight on the right.
+Direction: Follow the connecting path toward Cafe Taj Delight, which is described as being on the right.
+Exact approach: Verify.
+
+ROUTE 053: Cafe Taj Delight Area -> Lift Serving Fourth and Fifth Floors
+Cafe Taj Delight area -> Left turn before Cafe Taj Delight -> Lift.
+Direction: Locate the left turn before Cafe Taj Delight. The lift described on this route serves the fourth and fifth floors only.
+Destination: Lift serving fourth and fifth floors.
+Confirm the exact lift location and floor access before navigation use.
+
+===============================================
+SECTION 6: E BLOCK
+==================
+
+ROUTE 054: D Block Stationery Shop -> E Block
+D Block stationery shop -> Left-side route -> Seating area -> E Block on the left.
+Direction: Take the left-side route from the D Block stationery shop toward the seating area. Continue forward and look for E Block on the left.
+Destination: E Block.
+
+ROUTE 055: E Block -> Seminar Halls 3 and 4
+E Block -> Seminar Halls 3 and 4.
+Direction: Locate the seminar halls within the E Block area.
+Destination: Seminar Halls 3 and 4.
+
+ROUTE 056: E Block -> Mechanical Engineering Labs
+E Block -> Mechanical engineering laboratory area on the right.
+Direction: From the described E Block approach, locate the mechanical engineering labs on the right.
+Destination: Mechanical Engineering Labs.
+Exact floor and entrance: Verify.
+
+ROUTE 057: E Block -> Washrooms
+E Block -> Washroom area on the right.
+Direction: Locate the boys' and girls' washrooms on the right side of the described E Block route.
+Destination: E Block washrooms.
+Exact floor: Depends on the starting point.
+
+ROUTE 058: E Block -> CRDI
+E Block -> Fourth floor -> Central Research and Development Infrastructure Cell.
+Direction: Reach the fourth floor of E Block.
+Destination: CRDI.
+Full name: Central Research and Development Infrastructure Cell.
+
+ROUTE 059: E Block -> L Block
+E Block -> Direct connecting path -> L Block.
+Direction: Follow the direct connecting path from E Block to L Block.
+Destination: L Block.
+Important: The user confirmed a direct connection. Do not route through H Block, J Block, or K Block for this connection unless a separate route is verified.
+
+===============================================
+SECTION 7: F BLOCK
+==================
+
+ROUTE 060: F Block Junction -> Seminar Halls 1 and 2
+F Block junction -> Left turn -> Seminar Halls 1 and 2.
+Direction: At the F Block junction, turn left toward Seminar Halls 1 and 2.
+Destination: Seminar Halls 1 and 2.
+
+ROUTE 061: F Block Junction -> F Block Classrooms
+F Block junction -> Right turn -> F Block.
+Direction: At the F Block junction, turn right toward F Block, classrooms, and washrooms.
+Destination: F Block classrooms.
+Signage: Department of Electronics Engineering.
+
+ROUTE 062: F Block -> Washrooms
+F Block -> Same-floor washrooms.
+Direction: Locate the boys' and girls' washrooms on the same floor.
+Destination: F Block washrooms.
+
+ROUTE 063: F Block Junction -> L Block Lower-Ground Level
+F Block junction -> Straight route -> Inclined pathway -> L Block lower-ground level.
+Direction: From the junction, continue straight and take the inclined route to the lower-ground level of L Block.
+Destination: L Block lower-ground level.
+Exact entry point: Verify.
+
+ROUTE 064: F Block Junction -> L Block Upper-Ground Level
+F Block junction -> Straight route -> Declined pathway -> L Block upper-ground level.
+Direction: From the junction, follow the declined route to the upper-ground level of L Block.
+Destination: L Block upper-ground level.
+Important: This is not the basement. It is the upper-ground level between the lower-ground and ground levels.
+
+===============================================
+SECTION 8: H, J, K AND SCHOOL OF ENGINEERING ROUTE
+==================================================
+
+ROUTE 065: School of Engineering Board -> H Block
+School of Engineering board route -> H Block.
+Direction: Follow the connecting route from the School of Engineering board toward H Block.
+Exact turns: Verify.
+
+ROUTE 066: School of Engineering Board -> J Block
+School of Engineering board route -> J Block.
+Direction: Follow the connecting route toward J Block.
+Exact turns: Verify.
+
+ROUTE 067: School of Engineering Board -> K Block
+School of Engineering board route -> H Block / J Block area -> K Block.
+Direction: The described route connects the engineering board area with the H, J, and K block area.
+Exact sequence and turns: Verify.
+
+ROUTE 068: J Block -> H Block
+J Block -> Continue straight -> H Block.
+Direction: From the described J Block route, continue straight toward H Block.
+Destination: H Block.
+Junction orientation: Verify.
+
+ROUTE 069: J Block -> K Block
+J Block -> Connecting route -> K Block.
+Direction: Follow the connecting route between the J and K block areas.
+Exact turns: Verify.
+
+ROUTE 070: K Block -> J Block
+K Block -> Continue straight -> J Block.
+Direction: From K Block, continue straight along the described route toward J Block.
+Destination: J Block.
+Exact junction orientation: Verify.
+
+ROUTE 071: K Block -> Udaya Upahar
+K Block area -> Connecting route -> Udaya Upahar.
+Direction: The described route from the K Block area connects toward Udaya Upahar.
+Exact turn sequence: Verify.
+
+ROUTE 072: Main Gate -> U Block
+Main Gate -> Student ID checkpoint -> Right-side footpath -> Football ground area -> Cricket nets area -> Four-way junction -> School of Engineering board route -> H / J / K / N / P / Q / R route -> U Block.
+Direction: Follow the right-side campus route toward the football ground and cricket nets. Continue to the four-way junction and then toward the School of Engineering board route. The previously described route continues through H, J, K, N, P, Q, and R to U Block.
+Destination: U Block and vending-machine area.
+Important: The overall sequence was described by the user, but individual junction orientations and connections must be verified before this entire sequence is treated as a confirmed route.
+
+===============================================
+SECTION 9: L BLOCK AND FACILITIES
+=================================
+
+ROUTE 073: E Block -> L Block
+E Block -> Direct connecting path -> L Block.
+Direction: Use the direct connecting path from E Block to L Block.
+Destination: L Block.
+
+ROUTE 074: L Block -> HOD Cabins
+L Block -> Second floor -> HOD cabins.
+Direction: Reach the second floor of L Block.
+Destination: HOD cabins for the departments.
+
+ROUTE 075: L Block -> Faculty Cabins
+L Block -> Upper-ground route -> Faculty cabins on the left.
+Direction: From the described upper-ground route, look for faculty cabins on the left.
+Exact entrance: Verify.
+
+ROUTE 076: L Block -> Hatti Kaapi
+L Block upper-ground route -> Continue straight -> Hatti Kaapi.
+Direction: Follow the described route from the upper-ground level toward Hatti Kaapi.
+Destination: Hatti Kaapi.
+
+ROUTE 077: L Block -> Gym
+L Block -> Fifth floor -> Gym and indoor sports area.
+Direction: Reach L Block and use the stairs or a suitable lift to reach the fifth floor.
+Destination: Gym and indoor sports facilities.
+Exact lift access and floor transition: Verify.
+
+ROUTE 078: Main Gate -> Gym
+Main Gate -> Verified route to L Block -> Fifth floor -> Gym.
+Direction: Reach L Block through verified campus connections. Then use the verified stairs or lift route to the fifth floor.
+Destination: Gym and indoor sports facilities.
+Important: Do not assume every lift serves the fifth floor.
+
+ROUTE 079: Registrar's Office -> Gym
+Registrar's Office near D Block, first floor -> E Block -> Direct connecting path -> L Block -> Fifth floor -> Gym.
+Direction: From the Registrar's Office, follow a verified route toward E Block. Take the direct connecting path to L Block, then reach the fifth floor.
+Destination: Gym and indoor sports facilities.
+Exact Registrar's Office-to-E Block turns: Verify.
+
+ROUTE 080: Hatti Kaapi -> Food Stall Area
+Hatti Kaapi -> Left turn -> Food stall area.
+Direction: From Hatti Kaapi, turn left toward the food stalls.
+Destination: Food stall area.
+
+ROUTE 081: Food Stall Area -> Lassi House
+Food stall area -> Lassi House on the right.
+Direction: Locate Lassi House on the right side of the described food-stall area.
+Destination: Lassi House.
+
+ROUTE 082: Food Stall Area -> Momo Street
+Food stall area -> Momo Street on the left.
+Direction: Locate Momo Street on the left side of the described food-stall area.
+Destination: Momo Street.
+
+ROUTE 083: Food Stall Area -> VJ Mart
+Food stall area -> VJ Mart on the left.
+Direction: Locate VJ Mart on the left side of the described food-stall area.
+Destination: VJ Mart.
+
+ROUTE 084: Food Stall Area -> Crazy Cups
+Food stall area -> Crazy Cups on the left.
+Direction: Locate Crazy Cups on the left side of the described food-stall area.
+Destination: Crazy Cups.
+
+ROUTE 085: Food Stall Area -> Lift
+Food stall area -> Lift.
+Direction: Locate the lift in the food-stall area.
+Destination: Lift.
+Floor access: Verify.
+
+ROUTE 086: Lift Area -> P Block
+Lift area -> Stairs on the right -> P Block in front.
+Direction: Near the lift, locate the stairs on the right. P Block is described as being in front.
+Exact floor and entrance: Verify.
+
+ROUTE 087: L Block / Food Stall Area -> P Block Stationery
+Food stall lift area -> Down one floor -> P Block basement -> Stationery shop.
+Direction: From the described lift area, go down one floor to reach the P Block basement stationery shop.
+Destination: P Block stationery shop.
+Verify the correct lift and floor level before use.
+
+ROUTE 088: Hatti Kaapi -> Q Block
+Hatti Kaapi -> Lassi House area -> Continue forward -> Q Block.
+Direction: Follow the described route past the Lassi House area and continue toward Q Block.
+Exact junction sequence: Verify.
+
+===============================================
+SECTION 10: P BLOCK
+===================
+
+ROUTE 089: P Block -> Stationery Shop
+P Block -> Basement -> Stationery shop.
+Direction: Reach the basement of P Block.
+Destination: P Block stationery shop.
+
+ROUTE 090: P Block -> Maggie Point
+P Block -> Basement -> Maggie Point.
+Direction: Reach the basement of P Block and locate Maggie Point.
+Destination: Maggie Point.
+
+ROUTE 091: P Block -> Other Food Stalls
+P Block -> Basement -> Food stall area.
+Direction: Reach the basement of P Block.
+Destination: Food stalls.
+
+ROUTE 092: P Block -> Tea Spot
+P Block -> Second floor -> Tea spot.
+Direction: Reach the second floor.
+Destination: Tea and snacks spot.
+
+ROUTE 093: P Block Tea Spot -> N Block
+P Block second-floor tea spot -> Left turn -> N Block route.
+Direction: From the tea spot, turn left toward the described route leading to N Block.
+Exact stairs or floor transition to the connecting path: Verify.
+
+===============================================
+SECTION 11: N BLOCK
+===================
+
+ROUTE 094: N Block -> Seminar Halls 1 and 2
+N Block ground floor -> Left-side route -> F Block Seminar Halls 1 and 2.
+Direction: From the described N Block ground-floor junction, take the left route toward Seminar Halls 1 and 2.
+Exact connection and floor transition: Verify.
+
+ROUTE 095: N Block -> Udaya Upahar
+N Block ground floor -> Right-side route -> Udaya Upahar.
+Direction: From the described N Block ground-floor junction, take the right route toward Udaya Upahar.
+Exact connection: Verify.
+
+ROUTE 096: N Block -> K Block
+N Block ground floor -> Straight route -> K Block direction.
+Direction: From the described N Block ground-floor junction, continue straight toward K Block.
+Exact turns: Verify.
+
+ROUTE 097: N Block -> P Block
+N Block -> Connecting route -> P Block.
+Direction: Follow the described connecting route between the N and P block areas.
+Exact turns: Verify.
+
+ROUTE 098: N Block -> Q Block
+N Block / P Block connecting area -> Continue along verified connecting path -> Q Block.
+Direction: A route connecting the N/P area to Q Block was described.
+Exact junction and direction: Verify.
+
+===============================================
+SECTION 12: Q BLOCK
+===================
+
+ROUTE 099: Q Block -> Washrooms
+Q Block -> Right side -> Washrooms.
+Direction: Locate the washrooms on the right side of Q Block.
+Destination: Q Block washrooms.
+
+ROUTE 100: Q Block -> Lift
+Q Block -> Left side -> Lift.
+Direction: Locate the lift on the left side of Q Block.
+Destination: Q Block lift.
+Floor access: Verify.
+
+ROUTE 101: Q Block -> S Block
+Q Block -> Straight route -> S Block.
+Direction: From the described Q Block route, continue straight toward S Block.
+Exact junction orientation: Verify.
+
+ROUTE 102: Q Block -> R Block
+Q Block -> Connecting route -> R Block.
+Direction: Follow the described connecting route toward R Block.
+Exact turns: Verify.
+
+ROUTE 103: Q Block -> Lassi House
+Q Block -> Connecting route toward L Block -> Lassi House area.
+Direction: A route between Q Block and the L Block food-stall area was described.
+Exact route sequence: Verify.
+
+===============================================
+SECTION 13: R, S AND U BLOCKS
+=============================
+
+ROUTE 104: R Block -> U Block
+R Block -> Connecting route -> U Block vending-machine area.
+Direction: Follow the described route from R Block toward the vending-machine area in U Block.
+Exact turns: Verify.
+
+ROUTE 105: U Block -> Vending Machine
+U Block -> Vending-machine area.
+Direction: Locate the vending machine in U Block.
+Destination: Vending-machine area.
+
+ROUTE 106: U Block -> R / Q / P / N Direction
+U Block vending-machine area -> Left turn -> Connecting route toward R, Q, P and N.
+Direction: From the vending-machine area, turn left toward the described connecting route.
+Exact sequence of junctions: Verify.
+
+ROUTE 107: U Block -> Washrooms
+U Block -> Right turn -> Washrooms.
+Direction: From the described U Block route, take the right turn toward the washrooms.
+Exact starting point: Verify.
+
+ROUTE 108: U Block -> S / Q Connecting Area
+U Block -> Described right-side route -> Washroom direction -> Another right -> Connecting area toward S and Q Blocks.
+Direction: Follow the described turns from the U Block area.
+Exact junction orientation: Verify.
+
+ROUTE 109: U Block -> P Block Direction
+U Block / S-Q connecting area -> Junction -> Right route toward P Block.
+Direction: At the described junction, the right route connects toward P Block.
+Exact junction and floor: Verify.
+
+ROUTE 110: U Block -> L Block Direction
+U Block / S-Q connecting area -> Junction -> Left route toward L Block.
+Direction: At the described junction, the left route connects toward L Block.
+Exact junction and floor: Verify.
+
+ROUTE 111: S Block -> Faculty Cabins
+S Block -> Walk forward -> Faculty cabins.
+Direction: Continue forward from the described S Block area.
+Destination: Faculty cabins.
+
+ROUTE 112: S Block -> Lift
+S Block -> Walk forward -> Lift area.
+Direction: Continue toward the described lift area.
+Destination: Lift.
+The lift area was associated with U Block in the original description. Exact building boundary and connection: Verify.
+
+===============================================
+SECTION 14: OTHER DESTINATION ROUTES
+====================================
+
+ROUTE 113: Main Gate -> Registrar's Office
+Main Gate -> Right-side campus route -> D Block area -> Registrar's Office -> First floor.
+Direction: Follow the verified right-side campus route to the D Block area, then locate the Registrar's Office near D Block on the first floor.
+Exact final approach: Verify.
+
+ROUTE 114: Main Gate -> E Block
+Main Gate -> Right-side campus route -> D Block area -> Connecting path -> E Block.
+Direction: Reach the D Block area using verified connections, then follow the described connecting route toward E Block.
+Exact turns: Verify.
+
+ROUTE 115: Main Gate -> CRDI
+Main Gate -> Verified route to E Block -> Fourth floor -> CRDI.
+Direction: Reach E Block and proceed to the fourth floor.
+Destination: Central Research and Development Infrastructure Cell.
+Exact Main Gate-to-E Block route: Verify.
+
+ROUTE 116: Main Gate -> P Block Stationery
+Main Gate -> Verified route to P Block -> Basement -> Stationery shop.
+Direction: Reach P Block using verified campus connections, then go to the basement.
+Destination: P Block stationery shop.
+Exact Main Gate-to-P Block route: Verify.
+
+ROUTE 117: Main Gate -> Technical Library
+Main Gate -> Verified left-side route -> M Block -> First floor -> Technical Library.
+Direction: Reach M Block through the verified left-side campus route, then proceed to the first floor.
+Destination: Technical Library.
+
+ROUTE 118: Main Gate -> Law Library
+Main Gate -> Verified left-side route -> M Block -> First floor -> Law Library.
+Direction: Reach M Block through the verified left-side campus route, then proceed to the first floor.
+Destination: Law Library.
+
+ROUTE 119: Main Gate -> Medical Room
+Main Gate -> Verified left-side route -> Management Block / M Block area -> Medical Room.
+Direction: Reach the relevant Management Block area and follow the connecting path toward the Medical Room.
+Exact entrance and route: Verify.
+
+ROUTE 120: Main Gate -> Office of International Affairs
+Main Gate -> Verified left-side route -> M Block / Management Block area -> Office of International Affairs.
+Direction: Reach the relevant left-side campus area and follow the verified connecting path toward the office.
+Exact turns: Verify.
+
+ROUTE 121: Main Gate -> College Mess
+Main Gate -> Left-side footpath -> Lawn connection -> College Mess.
+Direction: Follow the left-side footpath and locate the path through the lawn that connects to the mess.
+Exact turns: Verify.
+
+ROUTE 122: Main Gate -> Main Cafeteria
+Main Gate -> Verified left-side campus route -> Management Block area -> Main Cafeteria.
+Direction: Follow the verified left-side campus route and locate the main cafeteria.
+Exact turns: Verify.
+
+ROUTE 123: Main Gate -> Auditorium
+Main Gate -> Verified left-side campus route -> Main Cafeteria area -> Auditorium above cafeteria.
+Direction: Reach the cafeteria area and follow verified internal access to the auditorium.
+Exact floor and entrance: Verify.
+
+===============================================
+SECTION 15: STATIONERY SHOP DIRECTORY
+=====================================
+
+LOCATION 001:
+D Block stationery shop.
+Floor: Ground floor.
+Access: D Block ground floor.
+
+LOCATION 002:
+P Block stationery shop.
+Floor: Basement.
+Access: P Block basement.
+
+IMPORTANT:
+There are two stationery shops. If a user asks for "the stationery shop" without specifying which one, clarify whether they mean D Block ground floor or P Block basement, unless their starting location makes the intended shop clear.
+
+===============================================
+SECTION 16: FLOOR AND FACILITY DIRECTORY
+========================================
+
+D BLOCK:
+
+* Ground floor: NVIDIA board, NVIDIA-powered labs, girls' washroom, stationery shop.
+* First floor: Registrar's Office is nearby, but its exact building location must be confirmed.
+* Second floor: Girls' washroom.
+* Third floor: Boys' washroom.
+* Additional floors: Washrooms are described as vertically aligned; verify each floor's exact facilities.
+
+E BLOCK:
+
+* Seminar Halls 3 and 4.
+* Mechanical Engineering Labs.
+* Boys' and girls' washrooms.
+* Fourth floor: CRDI.
+
+F BLOCK:
+
+* Seminar Halls 1 and 2 are on the left-side route from the junction.
+* F Block classrooms and washrooms are on the right-side route.
+* Both boys' and girls' washrooms are on the same floor.
+
+L BLOCK:
+
+* Lower-ground and ground levels contain labs and staff rooms.
+* Second floor: HOD cabins.
+* Fifth floor: Gym and indoor sports facilities.
+* Upper-ground route: Faculty cabins and Hatti Kaapi.
+
+M BLOCK:
+
+* First floor: Law Library and Technical Library.
+* M Block has a lift.
+
+P BLOCK:
+
+* Basement: Stationery shop, Maggie Point, and other food stalls.
+* Second floor: Tea spot serving tea and snacks.
+
+Q BLOCK:
+
+* Washrooms on the right side.
+* Lift on the left side.
+
+U BLOCK:
+
+* Classrooms.
+* Vending-machine area.
+
+===============================================
+SECTION 17: ROUTE COMBINATION RULES
+===================================
+
+1. A route from A to B can be combined with a route from B to C only if the endpoint and starting point refer to the same verified physical location.
+
+2. Never assume that a route can be reversed without checking whether the pathway is bidirectional or whether entrances, stairs, or one-way restrictions affect travel.
+
+3. Do not combine two routes merely because they mention the same block. The exact entrance, floor, or junction must match.
+
+4. When a user gives a starting location, select that location as the route origin.
+
+5. When no starting location is given, use the Main Gate.
+
+6. When the destination is inside a building, include the required floor and the final internal connection.
+
+7. If a route includes an unverified connection, identify it internally and avoid presenting the entire route as fully confirmed.
+
+8. When several valid routes exist, choose a suitable verified route and provide alternatives only when they are known.
+
+9. Attach a campus photograph to a route step when an image is available for the relevant landmark. Missing photographs must not prevent directions from being provided.
+
+10. Keep route instructions short and numbered. Each step should describe one movement or decision.
+
+===============================================
+END OF ROUTE KNOWLEDGE BASE
+===========================

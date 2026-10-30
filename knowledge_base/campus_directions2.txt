@@ -1,0 +1,401 @@
+PRESIDENCY UNIVERSITY CAMPUS GUIDE
+CAMPUS ROUTE KNOWLEDGE BASE
+
+ROUTE 1: MAIN GATE TO FOUNTAIN
+Starting Point: Main Gate
+Destination: Fountain
+Route: Main Gate -> Left-side footpath -> Lawn -> Fountain
+Directions:
+
+1. Enter through the Main Gate.
+2. Follow the footpath on the left.
+3. Continue alongside the lawn.
+4. Find the fountain on the right.
+
+ROUTE 2: FOUNTAIN TO MANAGEMENT BLOCKS
+Starting Point: Fountain
+Destination: Management Blocks
+Route: Fountain -> Left turn -> Management Blocks
+Directions:
+
+1. Stand near the fountain.
+2. Turn left.
+3. Follow the pathway to the Management Blocks on the right.
+
+ROUTE 3: MAIN GATE TO MANAGEMENT BLOCKS
+Starting Point: Main Gate
+Destination: Management Blocks
+Route: Main Gate -> Left-side footpath -> Fountain -> Left turn -> Management Blocks
+Directions:
+
+1. Enter through the Main Gate.
+2. Follow the left-side footpath toward the fountain.
+3. At the fountain, turn left.
+4. Continue toward the Management Blocks on the right.
+
+ROUTE 4: MANAGEMENT BLOCKS TO MEDICAL ROOM
+Starting Point: Management Blocks
+Destination: Medical Room
+Route: Management Blocks -> Left turn -> Medical Room
+Directions:
+
+1. Enter the Management Block area.
+2. Turn left.
+3. Follow the pathway to the Medical Room.
+
+ROUTE 5: MANAGEMENT BLOCKS TO TRANSPORT OFFICE
+Starting Point: Management Blocks
+Destination: Transport Office
+Route: Management Blocks -> Left turn -> Transport Office
+Directions:
+
+1. Enter the Management Block area.
+2. Turn left.
+3. Follow the pathway to the Transport Office.
+
+ROUTE 6: M BLOCK TO TECHNICAL LIBRARY
+Starting Point: M Block
+Destination: Technical Library
+Route: M Block -> First Floor -> Technical Library
+Directions:
+
+1. Enter M Block.
+2. Go to the first floor.
+3. Enter the Technical Library.
+
+ROUTE 7: M BLOCK TO LAW LIBRARY
+Starting Point: M Block
+Destination: Law Library
+Route: M Block -> First Floor -> Law Library
+Directions:
+
+1. Enter M Block.
+2. Go to the first floor.
+3. Enter the Law Library.
+
+ROUTE 8: FOUNTAIN TO CONTROLLER OF EXAMINATIONS
+Starting Point: Fountain
+Destination: Controller of Examinations
+Route: Fountain -> Straight pathway -> Controller of Examinations
+Directions:
+
+1. Start at the fountain.
+2. Continue straight along the pathway.
+3. Reach the Controller of Examinations.
+
+ROUTE 9: MAIN GATE TO COLLEGE MESS
+Starting Point: Main Gate
+Destination: College Mess
+Route: Main Gate -> Left-side footpath -> Lawn pathway -> College Mess
+Directions:
+
+1. Enter through the Main Gate.
+2. Follow the left-side footpath.
+3. Locate the path through the lawn.
+4. Follow it toward the College Mess.
+
+ROUTE 10: D BLOCK TO STATIONERY SHOP
+Starting Point: D Block
+Destination: Stationery Shop
+Route: D Block -> Ground Floor -> Stationery Shop
+Directions:
+
+1. Enter D Block.
+2. Go to the ground floor.
+3. Locate the stationery shop.
+
+ROUTE 11: P BLOCK TO STATIONERY SHOP
+Starting Point: P Block
+Destination: Stationery Shop
+Route: P Block -> Basement -> Stationery Shop
+Directions:
+
+1. Enter P Block.
+2. Go to the basement.
+3. Locate the stationery shop.
+
+ROUTE 12: E BLOCK TO L BLOCK
+Starting Point: E Block
+Destination: L Block
+Route: E Block -> Direct Connecting Path -> L Block
+Directions:
+
+1. Reach E Block.
+2. Follow the direct connecting pathway to L Block.
+
+ROUTE 13: L BLOCK TO GYM
+Starting Point: L Block
+Destination: Gym
+Route: L Block -> Fifth Floor -> Gym
+Directions:
+
+1. Enter L Block.
+2. Use the stairs or a lift that serves the fifth floor.
+3. Locate the gym and indoor sports facilities.
+
+ROUTE 14: E BLOCK TO CRDI
+Starting Point: E Block
+Destination: CRDI
+Route: E Block -> Fourth Floor -> CRDI
+Directions:
+
+1. Enter E Block.
+2. Go to the fourth floor.
+3. Locate the Central Research and Development Infrastructure Cell.
+
+ROUTE 15: F BLOCK JUNCTION TO SEMINAR HALLS 1 AND 2
+Starting Point: F Block Junction
+Destination: Seminar Halls 1 and 2
+Route: F Block Junction -> Left Turn -> Seminar Halls 1 and 2
+Directions:
+
+1. Reach the F Block junction.
+2. Turn left.
+3. Continue toward Seminar Halls 1 and 2.
+
+ROUTE 16: F BLOCK JUNCTION TO F BLOCK CLASSROOMS
+Starting Point: F Block Junction
+Destination: F Block Classrooms
+Route: F Block Junction -> Right Turn -> F Block
+Directions:
+
+1. Reach the F Block junction.
+2. Turn right.
+3. Follow the signs for the Department of Electronics Engineering.
+4. Enter the F Block classroom area.
+
+ROUTE 17: N BLOCK TO UDAYA UPAHAR
+Starting Point: N Block Ground Floor
+Destination: Udaya Upahar
+Route: N Block Ground Floor -> Right-side Path -> Udaya Upahar
+Directions:
+
+1. Reach the ground floor of N Block.
+2. Take the right-side pathway.
+3. Continue toward Udaya Upahar.
+
+ROUTE 18: N BLOCK TO K BLOCK
+Starting Point: N Block Ground Floor
+Destination: K Block
+Route: N Block Ground Floor -> Straight Path -> K Block
+Directions:
+
+1. Reach the ground floor of N Block.
+2. Continue straight along the described pathway.
+3. Follow the route toward K Block.
+
+ROUTE 19: Q BLOCK TO S BLOCK
+Starting Point: Q Block
+Destination: S Block
+Route: Q Block -> Straight Path -> S Block
+Directions:
+
+1. Reach Q Block.
+2. Continue straight along the described pathway.
+3. Follow the route to S Block.
+
+ROUTE 20: U BLOCK TO VENDING MACHINE
+Starting Point: U Block
+Destination: Vending Machine
+Route: U Block -> Vending Machine Area
+Directions:
+
+1. Enter U Block.
+2. Locate the vending machine area.
+
+ROUTE 21: L BLOCK TO HOD CABINS
+Starting Point: L Block
+Destination: HOD Cabins
+Route: L Block -> Second Floor -> HOD Cabins
+Directions:
+
+1. Enter L Block.
+2. Go to the second floor.
+3. Locate the HOD cabins.
+
+ROUTE 22: L BLOCK TO HATTI KAAPI
+Starting Point: L Block
+Destination: Hatti Kaapi
+Route: L Block Upper-Ground Route -> Straight Path -> Hatti Kaapi
+Directions:
+
+1. Reach the described upper-ground route of L Block.
+2. Continue straight.
+3. Locate Hatti Kaapi.
+
+ROUTE 23: HATTI KAAPI TO FOOD STALL AREA
+Starting Point: Hatti Kaapi
+Destination: Food Stall Area
+Route: Hatti Kaapi -> Left Turn -> Food Stall Area
+Directions:
+
+1. Stand near Hatti Kaapi.
+2. Turn left.
+3. Continue toward the food stalls.
+
+ROUTE 24: FOOD STALL AREA TO LASSI HOUSE
+Starting Point: Food Stall Area
+Destination: Lassi House
+Route: Food Stall Area -> Lassi House on the Right
+Directions:
+
+1. Reach the food-stall area.
+2. Look for Lassi House on the right.
+
+ROUTE 25: FOOD STALL AREA TO MOMO STREET
+Starting Point: Food Stall Area
+Destination: Momo Street
+Route: Food Stall Area -> Momo Street on the Left
+Directions:
+
+1. Reach the food-stall area.
+2. Look for Momo Street on the left.
+
+ROUTE 26: FOOD STALL AREA TO VJ MART
+Starting Point: Food Stall Area
+Destination: VJ Mart
+Route: Food Stall Area -> VJ Mart on the Left
+Directions:
+
+1. Reach the food-stall area.
+2. Look for VJ Mart on the left.
+
+ROUTE 27: FOOD STALL AREA TO CRAZY CUPS
+Starting Point: Food Stall Area
+Destination: Crazy Cups
+Route: Food Stall Area -> Crazy Cups on the Left
+Directions:
+
+1. Reach the food-stall area.
+2. Look for Crazy Cups on the left.
+
+ROUTE 28: Q BLOCK TO WASHROOMS
+Starting Point: Q Block
+Destination: Washrooms
+Route: Q Block -> Right Side -> Washrooms
+Directions:
+
+1. Enter Q Block.
+2. Locate the washrooms on the right.
+
+ROUTE 29: Q BLOCK TO LIFT
+Starting Point: Q Block
+Destination: Lift
+Route: Q Block -> Left Side -> Lift
+Directions:
+
+1. Enter Q Block.
+2. Locate the lift on the left.
+
+ROUTE 30: M BLOCK TO OFFICE OF INTERNATIONAL AFFAIRS
+Starting Point: M Block
+Destination: Office of International Affairs
+Route: M Block -> Right-side Connecting Path -> Office of International Affairs
+Directions:
+
+1. Reach M Block.
+2. Follow the right-side connecting pathway.
+3. Continue toward the Office of International Affairs.
+
+ROUTE 31: M BLOCK TO CONTROLLER OF EXAMINATIONS
+Starting Point: M Block
+Destination: Controller of Examinations
+Route: M Block -> Straight Path -> Controller of Examinations on the Left
+Directions:
+
+1. Start at M Block.
+2. Continue straight.
+3. Locate the Controller of Examinations on the left.
+
+ROUTE 32: MAIN GATE TO U BLOCK
+Starting Point: Main Gate
+Destination: U Block
+Route: Main Gate -> Right-side Footpath -> Football Ground Area -> Cricket Nets -> Four-way Junction -> School of Engineering Route -> H Block -> J Block -> K Block -> N Block -> P Block -> Q Block -> R Block -> U Block
+Directions:
+
+1. Enter through the Main Gate and pass the student ID checkpoint.
+2. Follow the right-side footpath toward the earlier football ground.
+3. Continue toward the cricket nets and four-way junction.
+4. Follow the described route through the School of Engineering area and connecting blocks.
+5. Continue toward U Block and locate the vending-machine area.
+   Note: Use this route sequence only after the intermediate connections have been mapped to the actual campus paths.
+
+ROUTE 33: CRICKET NETS TO SPORTS COURTS
+Starting Point: Cricket Nets
+Destination: Sports Courts
+Route: Cricket Nets -> Basketball Court -> Throwball Court -> Volleyball Court
+Directions:
+
+1. Reach the cricket nets.
+2. Locate the three adjacent sports courts.
+3. Identify the basketball, throwball, and volleyball courts.
+
+ROUTE 34: VOLLEYBALL COURT TO NEW BASKETBALL COURT
+Starting Point: Volleyball Court
+Destination: New Basketball Court
+Route: Volleyball Court Area -> Cross Volleyball Court -> New Basketball Court
+Directions:
+
+1. Reach the volleyball court area.
+2. Cross the volleyball court.
+3. Locate the new basketball court beside the new football ground.
+
+ROUTE 35: D BLOCK TO UDAYA UPAHAR
+Starting Point: D Block Area
+Destination: Udaya Upahar
+Route: D Block Area -> Four-way Junction near Proctor Checkpoint -> Straight -> Udaya Upahar
+Directions:
+
+1. Reach the four-way junction near the proctor checkpoint.
+2. Continue straight.
+3. Locate Udaya Upahar.
+
+ROUTE 36: FOUR-WAY JUNCTION TO HATTI COFFEE
+Starting Point: Four-way Junction near Proctor Checkpoint
+Destination: Hatti Coffee
+Route: Four-way Junction -> Right Side -> Hatti Coffee
+Directions:
+
+1. Reach the four-way junction near the proctor checkpoint.
+2. Look for Hatti Coffee on the right.
+
+ROUTE 37: FOUR-WAY JUNCTION TO FOOD VENDING MACHINE
+Starting Point: Four-way Junction near Proctor Checkpoint
+Destination: Food Vending Machine
+Route: Four-way Junction -> Right Side -> Food Vending Machine
+Directions:
+
+1. Reach the four-way junction near the proctor checkpoint.
+2. Locate the food vending machine on the right.
+
+ROUTE 38: D BLOCK TO NVIDIA LABS
+Starting Point: D Block
+Destination: NVIDIA Labs
+Route: D Block -> Ground Floor -> NVIDIA Board -> DGL01 / DGL02 / DGL03
+Directions:
+
+1. Enter D Block.
+2. Locate the NVIDIA board on the ground floor.
+3. Follow the laboratory signage to the required NVIDIA-powered lab.
+
+ROUTE 39: D BLOCK TO GIRLS' WASHROOM
+Starting Point: D Block
+Destination: Girls' Washroom
+Route: D Block Ground Floor -> NVIDIA Board -> Right Side -> Girls' Washroom
+Directions:
+
+1. Reach the ground floor of D Block.
+2. Locate the NVIDIA board.
+3. Find the girls' washroom on the right.
+
+ROUTE 40: MAIN GATE TO GYM
+Starting Point: Main Gate
+Destination: Gym
+Route: Main Gate -> Right-side Campus Route -> E Block -> Direct Connecting Path -> L Block -> Fifth Floor -> Gym
+Directions:
+
+1. Enter through the Main Gate.
+2. Follow the verified campus route toward E Block.
+3. Take the direct connecting path to L Block.
+4. Go to the fifth floor using the stairs or a suitable lift.
+5. Locate the gym and indoor sports facilities.
