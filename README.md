@@ -1,50 +1,107 @@
-# Presidency University Campus Guide
+# Presidency University Transport Assistant (RAG Chatbot)
 
-A local Streamlit campus information app using the two supplied route knowledge files, persistent ChromaDB retrieval, Sentence Transformers embeddings, optional Groq answers, and editable image metadata. The files are preserved unmodified under `knowledge_base/`.
+A Retrieval-Augmented Generation (RAG) chatbot that answers Presidency University students' transport questions: which bus serves their area, pickup times, annual fees, how to change a route, how to pay on Linways, and who to contact.
 
-## Setup and launch
+Built for the GenAI course (International Teaching Week).
 
-On Windows, double-click `start.bat`. It creates a local virtual environment, installs the requirements the first time, and starts the app in your browser. Keep the command window open while you use the app; close it to stop the server. Python 3.10 or newer and an internet connection are required for first-time setup.
+## Problem
+Transport information is scattered across Excel sheets, the Linways portal, circulars and the academic calendar. Students struggle to find the right route, fee, pickup time, or the process to change a route.
 
-To start it manually:
+## Features
+- Route, boarding point, pickup time and annual fee lookup (typo tolerant, e.g. "kodigehali circle")
+- Route-level summaries with seats remaining (snapshot)
+- Linways login and fee payment steps, and the route change process
+- Transport help desk and university contacts
+- Academic holidays and the full 2026-27 academic calendar
+- Driver details from the June transport sheet (optional, see Data)
+- "I don't know" handling: no guessing of drop timings, bus service on holidays, live tracking or an emergency number; it points students to the transport help desk
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-streamlit run app.py
+## Architecture
+```
+Excel workbook (routes, fees, drivers, policies, contacts, calendar)
+        |
+   cleaning + chunking
+   (one chunk per stop / route / event; recursive chunking for documents)
+        |
+   embeddings: BAAI/bge-small-en-v1.5  ->  Chroma vector DB
+   keyword index: BM25
+        |
+   hybrid search (reciprocal rank fusion) + exact stop lookup + query routing
+        |
+   LLM: Qwen (Groq) answers ONLY from the retrieved context, with source and date
+        |
+   Gradio chat UI
 ```
 
-The first index may download `sentence-transformers/all-MiniLM-L6-v2` and may take a few minutes. Use **Index / refresh campus files** in the sidebar after changing knowledge files. ChromaDB persists under `data/chroma_db/`.
+| Stage | Technique |
+|---|---|
+| Chunking | One chunk per stop and route; recursive chunking (LangChain) for documents |
+| Embeddings | BAAI/bge-small-en-v1.5 (384-dim, cosine similarity) |
+| Vector DB | ChromaDB |
+| Search | Hybrid: semantic + BM25 keyword, combined with reciprocal rank fusion |
+| Extras | Exact stop lookup with fuzzy matching (RapidFuzz); routing for holiday and emergency/contact questions |
+| LLM | Qwen3.8-27B on Groq (fallback: gpt-oss-20b); Qwen2.5-7B-Instruct (4-bit, local) used for experiments |
+| UI | Gradio |
 
-## Configuration
+## Data
+All data is in `data/transport_chatbot_data.xlsx` (one sheet per source):
 
-Add a valid Groq API key to the ignored local `.env` file as `GROQ_API_KEY=...`. `GROQ_MODEL` defaults to `openai/gpt-oss-120b`; change it in `.env` if needed. The application uses Groq's OpenAI-compatible chat completions endpoint and never displays the key.
+| Sheet | Content | Source |
+|---|---|---|
+| Portal_Routes_Fees | 61 routes, 290 boarding points, pickup time, annual fee, seats remaining | Linways Bus Routes Details (copied 29 Oct 2026) |
+| Excel_Routes_Drivers | 22 routes, pickup points, times, driver names and mobile numbers (older route numbering) | Transport department Excel (8th-30th June) |
+| Operating_Hours_Policies, Fee_Payment_Steps, Route_Change | Hours, fee rules, Linways steps, route change process | Transport knowledge base and route change instructions |
+| Contacts | Transport help desk, board lines, grievance, ombudsman, admission desks | University contacts |
+| Holidays, Academic_Calendar | 22 holidays and the full 2026-27 calendar | Academic Calendar 2026-27 |
+| Info_Not_Confirmed, Data_Notes | What the bot must not guess, and data quality observations | Compiled |
 
-## Campus images
+`data/portal_routes.txt` is the raw portal text the route sheet was built from.
 
-The `picture/` folder already contains campus photos. Campus Explorer displays at most one best-matching photo; AI Campus Assistant does not show photos; Campus Navigation displays matching route-stop photos in order and the destination photo last. Photos can be matched against filenames automatically (for example, **gym** finds `gym.jpeg`). To provide a more specific title, location, keywords, or description, add metadata for that exact filename in `data/image_metadata.json`, for example:
+**Verification:** [add who in the transport office confirmed the data, and on which date]
 
-```json
-{"images":[{"filename":"example.jpg","title":"Verified title","location":"Verified location","keywords":["verified keyword"],"description":"Verified description"}]}
-```
+**Privacy note:** driver names and phone numbers are included only if the university authorizes sharing them. Set `INCLUDE_DRIVERS = False` in the notebook to exclude them.
 
-The example is a schema illustration, not actual campus image information. User-provided metadata overrides the filename-based title and keywords.
+### Data quality notes
+- Two route numbering systems: the June sheet uses routes 1-22, the portal uses R-1 to R-37 (with A/B/C variants)
+- The same stop appears with two fees on R-15 (Kodigehalli Sterling Apts: Rs 39,000 and Rs 40,000)
+- Stop-name variants and typos (e.g. SHANTHINAGAR / Shanti Nagar, Hunsemarenahalli)
+- Pickup times such as 06:54:59 are rounded to 6:55 AM
+- Drop times are missing for all 290 stops
+- Seats remaining changes daily; stored as a snapshot with a date
 
-## Routes and limitations
+## How to run
+1. Open `transport_chatbot_final.ipynb` in Google Colab.
+2. Add your Groq key as a Colab Secret named `GROQ_API_KEY` (key icon in the left sidebar). Never paste it into the notebook.
+3. Run the cells top to bottom. When asked, upload `data/transport_chatbot_data.xlsx`.
+4. The Gradio cell prints a public link to the chat UI.
 
-The supplied text files are the route sources. Add future route text files as `.txt` files in `knowledge_base/` and use **Index / refresh campus files** to include them. Their contents can overlap or differ in certainty. Campus Navigation searches for a single document that explicitly includes both the requested origin and destination. It does not combine route records, infer pathways, calculate distances, or run shortest-path routing. Route text marked “Verify” remains caveated and should be confirmed on campus. No distance values, evaluation scores, or route graph are bundled.
-
-## Using the modules
-
-Campus Explorer uses Groq to summarize retrieved location and facility information in natural language; the original matching passages remain available under **Retrieved campus sources**. Campus Navigation asks Groq to explain a route only after finding a source record that explicitly mentions both endpoints, and shows the matching route records for verification. The About page also lets you ask Groq questions about the guide itself. These answers require a working Groq API key and stay grounded in the context shown to the model.
-
-## Modules and architecture
-
-The `modules/module_registry.py` registry powers sidebar navigation and dashboard module cards. To add a module, implement a renderer in `modules/`, import/register it in the registry, and add its renderer to `PAGES` in `app.py`.
-
-Flow: User → Streamlit → Sentence Transformer embeddings → persistent ChromaDB retrieval → relevant source context → optional Groq API → answer and metadata-matched images. Sentence Transformers are used for semantic embeddings, not translation or fine-tuning.
+Install requirements locally with `pip install -r requirements.txt` if you are not using Colab.
 
 ## Evaluation
+`eval/eval_questions.csv` contains 45 student-style questions (stop fees and times, routes, procedures, policies, contacts, calendar, typos, aggregate questions, and questions the bot must not answer). The last notebook cells compare retrieval and answer accuracy across configurations.
 
-`data/evaluation_questions.json` is an unscored case template. Retrieval Precision@K and Recall@K can be calculated against reviewed references; correctness, faithfulness, relevance, and image relevance need human review. Route success rate is inapplicable until verified route graph and route tests exist. No evaluation has been performed or claimed.
+### Results
+[Fill in after running the evaluation cells]
+
+| Configuration | Retrieval hit rate | Answer accuracy |
+|---|---|---|
+| Semantic only | | |
+| Keyword only (BM25) | | |
+| Hybrid | | |
+| Hybrid + stop lookup + routing | | |
+
+### What failed and what we improved
+[Fill in: failure cases from the evaluation and the fix for each]
+
+## Limitations and future work
+- Drop timings, evening schedule and live bus tracking are not available in the data
+- No dedicated emergency number has been provided yet
+- Seats remaining is a snapshot, not live
+- Route numbers in the June sheet and the portal are not mapped to each other
+- Add images (Linways screenshots, route map) with image retrieval
+- Kannada language support
+
+## Team
+[Add names]
+
+Course: GenAI, Presidency University, Bengaluru
